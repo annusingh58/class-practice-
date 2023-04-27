@@ -130,25 +130,32 @@
 // }
 
 // Write a program that takes in three integers and finds the largest and smallest among them.
-//   var num1=10;
-//   var num2=5;
-//   var num3=80;
-//   if((num1>num2 && num1>num3) && (num2<num3<num1) ){
-//         console.log(num1," is largest",num2,"is smallest");
-//   }
-//   else if((num2>num1 && num2>num3) && (num3<num1<num2)){
-//     console.log(num2,"is largest",num3 ," is smallest");
+  var num1=80;
+  var num2=55;
+  var num3=100;
+  if((num1>num2 && num1>num3) ){
+        console.log(num1," is largest");
+  }
+  else if((num2>num1 && num2>num3) ){
+    console.log(num2,"is largest");
 
-//   }
-//  else if((num3>num1 && num3>num2) && (num1<num2<num3)){
-//     console.log(num3,"is largest",num1,"is smallest");
-//   }
-//   else {
-//     console.log("invalid");
-//   }
+  }
+  else{
+    console.log(num3,"is largest");
+  }
 
+ if((num1<num2 && num1<num3) ){
+    console.log(num1,"smallest");
 
+  }
+  else if((num2<num1 && num2<num3) ){
+    console.log(num2,"is smallest");
 
+  }
+ 
+  else {
+    console.log(num3,"is smallest");
+  }
 
 
 
