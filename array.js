@@ -236,39 +236,43 @@
 
 
 
-// var array=[34,45,65,23,10,676,34,39]
-//  var target=66;
-//  var sum=0;
-//  var empty=[];
-//  for(i=0;i<array.length;i++){
-
-//     if(target==array[i]){
-//         sum=sum[i]+1;
-//         empty.push(sum);
-//         console.log(sum)
-
-//     }
-//     else{
-//         console.log("not found")
-//     }
-    
-//  }
-
-
-
-
- var start=5799;
- var end=78659;
- var sum=0;
- for(i=start;i<=end;i+2){
-    sum=sum+i;
-
-
-
-
-
+var array=[34,45,65,32,23,10,676,34,39];
+ var target=66;
+   var flag=false;
+ for(i=0;i<array.length;i++){
+   for(j=array.length-1;j>i;j--){
+      if(array[i]+array[j]==target){
+      flag=true;
+      console.log(array[i],array[j]);
+          }
+   
+   } 
  }
- console.log(sum);
+ if(flag){
+   console.log("found") 
+ }
+ else{
+   console.log("not found");
+ }
+
+
+
+
+//  var start=5799;
+//  var end=78659;
+//  var sum=0;
+//  for(i=start; i<=end; i+=3){
+//     sum+=i;
+//  }
+//  console.log(sum);
+
+ 
+//  var array=[34,45,555,567,78,89,34,78,89]
+//  var object={};
+//  for(i=0;i<array.length;i++){
+//    object[i]=array[i];
+
+//  } console.log(object);
 
  
 
